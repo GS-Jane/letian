@@ -1,0 +1,110 @@
+.head_t {
+  width: 100%;
+  background-color: #F5F5F5;
+  line-height: 46px;
+  font-size: 12px;
+}
+
+.head_t .head_l li {
+  float: left;
+  margin-right: 6px;
+}
+
+.head_t .head_l a img {
+  width: 18px;
+}
+
+.head_t .head_l a .jc {
+  padding-right: 24px;
+}
+
+.head_t .head_l a .head_jt {
+  margin-right: 8px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.head_t .head_l a .head_jts {
+  border-right: 1px solid #CCCCCC;
+  padding-right: 3px;
+}
+
+.head_t .head_r li {
+  float: left;
+  margin-right: 20px;
+}
+
+.head_t .head_r .head_rdl {
+  border: 1px solid #ddd;
+  padding: 3px;
+  background-color: #E9E9E9;
+}
+
+.head_sou {
+  height: 110px;
+  font-size: 12px;
+}
+
+.head_sou .container {
+  position: relative;
+}
+
+.head_sou .container h1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.head_sou .head_ss {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  width: 400px;
+  height: 40px;
+  border: 2px solid #363D4C;
+  line-height: 40px;
+}
+
+.head_sou .head_ss img {
+  width: 18px;
+}
+
+.head_sou .head_ss .pipei {
+  border-right: 1px solid #E1E1E1;
+}
+
+.head_sou .head_ss a {
+  padding-left: 20px;
+}
+
+.head_sou .head_ss span {
+  padding-left: 10px;
+}
+
+.head_sou .head_ss span input {
+  width: 238px;
+  height: 28px;
+}
+
+.head_nav {
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 2px solid red;
+}
+
+.head_nav .nav li {
+  float: left;
+  line-height: 34px;
+  padding-right: 70px;
+}
+
+.head_nav .nav li a {
+  color: #333333;
+}
+
+.head_nav .nav li a img {
+  background-color: red;
+  width: 30px;
+}
+
+.head_nav .nav li a span {
+  padding-left: 20px;
+}

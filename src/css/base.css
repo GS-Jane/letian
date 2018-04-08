@@ -35,7 +35,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*公共类*/
 .container {  /*版心 提取 */
-    width:1220px;
+    width:1020px;
     margin:0 auto;
 }
 .fl {
@@ -61,10 +61,10 @@ s,i,em{font-style:normal;text-decoration:none;}
 .font16{ font-size: 16px;}
 *{box-sizing:border-box;}
 /*公共部分*/
-.shouye{
+/*.shouye{
   width: 100%;
 }
-
+*/
 
 /*字体*/
 

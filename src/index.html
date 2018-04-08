@@ -4,8 +4,785 @@
     <meta charset="UTF-8" />
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/head.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/jquery-gsCarousel/jquery.gsCarousel.css" />
 </head>
+    <script src="./lib/jquery-3.2.1.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./lib/jquery-gsCarousel/jquery.gsCarousel.js"></script>
 <body>
+    <div id="head">
+    </div>
+    <div id="lunbotu">
+        <div class="container clearfix"> 
+            <div class="box"> 
+            </div>               
+        </div>           
+    </div>
+    <div id="jnav">
+       <div class="container clearfix">
+            <ul class="jnav_l">
+                <li class="jgs">
+                    <a href="#"><span>护肤</span></a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+
+                </li>
+                <li class="jgs">
+                    <a href="#">彩妆</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">香水/美体/美发</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">箱包/钱包</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">手表/手饰</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">时尚/配件</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">数码电器</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">食品/生活</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">韩国品牌馆</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">婴幼儿馆</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="jgs">
+                    <a href="#">男士馆</a>
+                    <div class="jnav_yc">
+                            <ul class="jnav_yc1 fl">
+                                <li><a href="#"><span>基础护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">保湿喷雾</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc2 fl">
+                                <li><a href="#"><span>防晒</span></a></li>
+                                <li><a href="#">防晒霜</a></li>
+                                <li><a href="#">防晒喷雾</a></li>
+                                <li><a href="#">防晒棒</a></li>
+                                <li><a href="#">防晒气垫粉</a></li>
+                                <li><a href="#">晒后修护</a></li>
+                                <li><a href="#">美黑产品</a></li>
+                               
+                            </ul>
+                            <ul class="jnav_yc3 fl">
+                                <li><a href="#"><span>洁面</span></a></li>
+                                <li><a href="#">眼部唇部卸妆</a></li>
+                                <li><a href="#">卸妆油</a></li>
+                                <li><a href="#">卸妆乳/霜</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">卸妆水</a></li>
+                                <li><a href="#">卸妆湿巾</a></li>
+                                <li><a href="#">香皂</a></li>
+                                <li><a href="#">磨砂/去角质</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">美容用品</a></li>
+                                
+                            </ul>
+                            <ul class="jnav_yc4 fl">
+                                <li><a href="#"><span>男士护肤</span></a></li>
+                                <li><a href="#">化妆水</a></li>
+                                <li><a href="#">乳液</a></li>
+                                <li><a href="#">精华</a></li>
+                                <li><a href="#">面霜</a></li>
+                                <li><a href="#">脸部精油</a></li>
+                                <li><a href="#">眼部/颈部护理</a></li>
+                                <li><a href="#">唇部护理</a></li>
+                                <li><a href="#">面膜</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">剃须/须后护理</a></li>
+                                <li><a href="#">洗面奶</a></li>
+                                <li><a href="#">美体/美发</a></li>
+                                <li><a href="#">化妆品</a></li>
+                                <li><a href="#">特殊护理</a></li>
+                                <li><a href="#">护肤套装</a></li>
+                            </ul>
+                            <ul class="jnav_yc4 fr">
+                                <li><img src="./img/yc1.png"/></li>
+                            </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="jnav_b">
+                <li class="gs">
+                    <a href="#">官方网上专卖店</a>
+                    <ul class="jnav_byc">
+                        <li><a href="#">春暖花开时邂逅幸运</a></li>
+                        <li><a href="#">2018每月幸运任您选</a></li>
+                        <li><a href="#">4月新人享双重福利</a></li>
+                    </ul>
+                </li>
+                <li class="gs">
+                    <a href="#">热门活动</a>
+                    <ul class="jnav_byc">
+                        <li><a href="#">春暖花开时邂逅幸运</a></li>
+                        <li><a href="#">2018每月幸运任您选</a></li>
+                        <li><a href="#">4月新人享双重福利</a></li>
+                    </ul>
+                </li>
+                <li class="gs">
+                    <a href="#">积分礼惠</a>
+                    <ul class="jnav_byc1">
+                        <li><a href="#">春暖花开时邂逅幸运</a></li>
+                        <li><a href="#">2018每月幸运任您选</a></li>
+                        <li><a href="#">4月新人享双重福利</a></li>
+                    </ul>
+                </li>
+                <li class="gs">
+                    <a href="#">合作优惠</a>
+                    <ul class="jnav_byc2">
+                        <li><a href="#">春暖花开时邂逅幸运</a></li>
+                        <li><a href="#">2018每月幸运任您选</a></li>
+                        <li><a href="#">4月新人享双重福利</a></li>
+                    </ul>
+                </li>
+                <li class="gs">
+                    <a href="#">品牌特惠</a>
+                    <ul class="jnav_byc3">
+                        <li><a href="#">春暖花开时邂逅幸运</a></li>
+                        <li><a href="#">2018每月幸运任您选</a></li>
+                        <li><a href="#">4月新人享双重福利</a></li>
+                    </ul>
+                </li>
+            </ul>
+       </div>
+    </div>
+    <div id="dj">
+        <div class="container">
+            <a href="#"><img src="./img/dj1.jpg" /></a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <h1>当前人气商品 <span class="hd">登录后可查看专为您推荐的贴心商品</span></h1>
+            <ul class="main_m clearfix">
+                <!-- <li>
+                    <a href="#">
+                        <img src="./img/l1.jpg" />
+                        <p class="p1">悦诗风吟</p>
+                        <p class="p2">innisfree</p>
+                        <p class="p3">NO SEBUM MINERAL POWDER</p>
+                        <p class="p4"><span>$5</span> 约31.3元</p>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
