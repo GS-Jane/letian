@@ -1,0 +1,11 @@
+;
+require(['config'],function(){
+    require(['jquery','gdszoom'],function($,ca){
+        jQuery(function($){
+            //头部引入
+            $('#head').load('../html/head.html');
+            //尾部引入
+            $('#foot').load('../html/foot.html');
+        })
+    })
+})

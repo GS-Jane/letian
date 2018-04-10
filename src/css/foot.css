@@ -1,0 +1,221 @@
+#foot .foot_t h1 {
+  padding: 10px 0 10px 0;
+}
+
+#foot .foot_t h1 span {
+  font-size: 12px;
+  color: #999999;
+}
+
+#foot .foot_t .foot_tmain {
+  border: 1px solid #E8E8E8;
+  background-color: #F7F9FD;
+  position: relative;
+  height: 310px;
+}
+
+#foot .foot_t .foot_tmain dl {
+  width: 540px;
+}
+
+#foot .foot_t .foot_tmain dl dt {
+  position: absolute;
+  top: 45px;
+  left: 27px;
+}
+
+#foot .foot_t .foot_tmain dl dt img {
+  width: 34px;
+  margin-left: 14px;
+}
+
+#foot .foot_t .foot_tmain dl dd {
+  font-size: 13px;
+  position: absolute;
+  top: 16px;
+  left: 130px;
+  border-right: 1px solid #E1E1E1;
+}
+
+#foot .foot_t .foot_tmain dl dd div {
+  width: 350px;
+  padding-bottom: 18px;
+}
+
+#foot .foot_t .foot_tmain dl dd div p {
+  font-size: 14px;
+}
+
+#foot .foot_t .foot_tmain dl dd .dh {
+  padding-left: 90px;
+}
+
+#foot .foot_t .foot_tmain dl dd .dh span {
+  font-size: 12px;
+  color: #999999;
+}
+
+#foot .foot_t .foot_tmain .shiti {
+  position: absolute;
+  top: 22px;
+  right: 150px;
+}
+
+#foot .foot_t .foot_tmain .shiti div {
+  position: absolute;
+  top: 40px;
+  left: -320px;
+}
+
+#foot .foot_t .foot_tmain .shiti div img {
+  width: 48px;
+  margin-left: 14px;
+}
+
+#foot .foot_t .foot_tmain .shiti div span {
+  font-size: 12px;
+  color: #99A0AC;
+}
+
+#foot .foot_t .foot_tmain .shiti p {
+  position: absolute;
+  width: 250px;
+  top: 40px;
+  right: -50px;
+  font-size: 12px;
+  color: #99A0AC;
+}
+
+#foot .foot_t .foot_tmain .shiti p span {
+  font-size: 24px;
+  color: #000000;
+}
+
+#foot .foot_t .foot_tmain .fwu {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  width: 900px;
+  border-top: 1px solid #E5E5E5;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwul {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwul li {
+  float: left;
+  padding: 10px;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwul a {
+  display: block;
+  width: 100px;
+  height: 38px;
+  border: 1px solid #E5E5E5;
+  background-color: #fff;
+  text-align: center;
+  line-height: 38px;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwur {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwur span {
+  margin-right: 20px;
+}
+
+#foot .foot_t .foot_tmain .fwu .fwur li {
+  float: left;
+  padding: 2px;
+}
+
+#foot .foot_ms {
+  margin-top: 30px;
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+}
+
+#foot .foot_ms li {
+  float: left;
+}
+
+#foot .foot_ms li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  margin-right: 60px;
+  padding-left: 56px;
+}
+
+#foot .foot_ms li a span {
+  border-right: 1px solid #DADADA;
+  padding-left: 60px;
+}
+
+#foot .foot_nr {
+  padding-top: 30px;
+  border-top: 2px solid #F0F0F0;
+  background-color: #F7F9FD;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#foot .foot_nr .foot_nrl {
+  width: 540px;
+  font-size: 12px;
+}
+
+#foot .foot_nr .foot_nrl img {
+  padding-bottom: 10px;
+}
+
+#foot .foot_nr .foot_nrl p {
+  padding-bottom: 10px;
+}
+
+#foot .foot_nr .foot_nrl .p1 {
+  color: #ccc;
+}
+
+#foot .foot_nr .foot_nrl .p2 {
+  color: #666666;
+}
+
+#foot .foot_nr .foot_nrl .p3 {
+  color: #999999;
+}
+
+#foot .foot_nr .foot_nrr {
+  padding-left: 60px;
+}
+
+#foot .foot_nr .foot_nrr select {
+  width: 200px;
+}
+
+#foot .foot_nr .foot_nrr p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+#foot .foot_nr .foot_nrr p a {
+  display: block;
+  width: 100px;
+  height: 18px;
+  border: 1px solid #ccc;
+}
+
+#foot .foot_nr .foot_nrr ul {
+  padding-top: 30px;
+}
+
+#foot .foot_nr .foot_nrr ul li {
+  float: left;
+  padding-right: 10px;
+}
