@@ -1,0 +1,73 @@
+#main {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+#main .main_zc {
+  font-size: 12px;
+}
+
+#main .main_zc .zc1 img {
+  width: 24px;
+}
+
+#main .main_zc .zc1 span {
+  margin-left: 10px;
+}
+
+#main .main_zc .zc2 span {
+  margin-left: 10px;
+}
+
+#main h1 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+#main .bz {
+  padding: 50px;
+  height: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#main .bz li {
+  float: left;
+  width: 140px;
+  border-bottom: 3px solid red;
+  margin-left: 90px;
+}
+
+#main .bz li img {
+  width: 40px;
+}
+
+#main .yhq {
+  border: 1px solid #DBE0E5;
+  height: 80px;
+}
+
+#main .yhq img {
+  margin: 10px;
+  width: 40px;
+  float: left;
+}
+
+#main .yhq p {
+  margin: 10px 0 0 100px;
+  font-size: 16px;
+  color: red;
+}
+
+#main .yhq a {
+  display: block;
+  float: right;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #505767;
+  background-color: #505767;
+  color: #fff;
+  text-align: center;
+  margin-right: 20px;
+}

@@ -5,12 +5,100 @@
     <title>详情页</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/head.css" />
-    <link rel="stylesheet" type="text/css" href="../css/datails.css" />
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
     <link rel="stylesheet" type="text/css" href="../css/foot.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery.gdsZoom/jquery.gdsZoom.css" />
 </head>
 <body>
     <div id="head"></div>
+    <div id="main">
+        <div class="container">
+            <div class="main_t">
+                <div>   
+                    <img src="../svg/房子.svg" alt="" /><span>首页></span>
+                    <select>
+                        <option value="护肤">护肤</option>
+                        <option value="彩妆">彩妆</option>
+                    </select>>
+                    <select>
+                        <option value="基础护肤">基础护肤</option>
+                        <option value="防晒">防晒</option>
+                    </select>
+                    <div class="fr"><input type="text" placeholder="在该分类中搜索商品"/><button><img src="../svg/搜索.svg" alt="" /></button></div>
+                </div>
+            </div>
+            <div class="pricename">
+                <p><span class="ys1"></span><span class="ys2"></span></p>
+                <h1 class="ys_h1"></h1>
+                <ul>
+                    <li><a href="#" class="lj">立即前往品牌专卖店</a></li>
+                    <li><a href="#"><img src="../svg/爱心.svg" alt="" /></a></li>
+                    <li><a href="#"><img src="../svg/分享.svg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="main_zy">
+                <div class="main_zyl">
+                    <div class="main_img">
+                        <img src="" data-big="" class="m_img"/>
+                    </div>
+                    <div class="smallList">
+                            <img src="" data-big="" class="m_imgs"/>
+                            <img src="../img/fd1.jpg" data-big="../img/fd1.jpg">
+                            <img src="../img/fd2.jpg" alt="">
+                            <img src="../img/fd3.jpg" alt="">  
+                    </div>
+                </div>
+                <div class="main_zyr">
+                    <p class="sxs"><span class="sxs1">3小时前</span><span class="sxs2">畅销</span></p>
+                    <div class="price">
+                            <span class="price_1">原价</span> 
+                            <p class="price_p"><span class="price_2"></span>(<span class="price_3"></span>元)</p>
+                    </div>
+                    <div class="zk">
+                        <span>折扣价</span>
+                        <p class="zk1"><span>登录后可查看优惠</span><a href="#">登录</a></p>
+                        <p class="zk2"><a href="#">查看折扣优惠</a><a href="#">预测计算机</a></p>
+                    </div>
+                    <div class="gwyh">
+                            <p><span>购物优惠</span>可用购物车优惠券 (但7折以下的特惠商品除外)</p>
+                    </div>
+                    <div class="daim gwyh">
+                        <p><span>商品代码</span>参考代码:씨드세럼3입(16) 商品代码:2723071237</p>
+                    </div>
+                    <div class="qty gwyh">
+                            <p>
+                                <span>数量</span>
+                                <a href="#" class="qty1">-</a>
+                                <input type="text" value="1"/>
+                                <a href="#" class="qty2">+</a>
+                            </p>
+                    </div>
+                    <div class="jia gwyh">
+                        <p>根据公司及品牌的相关规定，可使用的积分最多为购买金额（使用优惠券后）的30%。</p>
+                        <a href="#" class="jia_ru">加入购物车</a>
+                        <a href="#" class="jia_li">立即够买</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <img src="../img/xp.png"  />
+            </div>
+
+          <!--   <ul class="main_m clearfix">
+                <li>
+                    <a href="#">
+                        <img src="./img/l1.jpg" />
+                        <p class="p1">悦诗风吟</p>
+                        <p class="p2">innisfree</p>
+                        <p class="p3">NO SEBUM MINERAL POWDER</p>
+                        <p class="p4"><span>$5</span> 约31.3元</p>
+                    </a>
+                </li>
+            </ul> -->
+        </div>
+    </div>
     <div id="foot"></div>
 </body>
 </html>
-<script type="text/javascript" src="../js/require.js" data-main="../js/dateils"></script>
+<script type="text/javascript" src="../js/require.js" data-main="../js/details"></script>

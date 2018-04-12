@@ -39,7 +39,7 @@ require(['config'],function(){
             //点击传送ID,跳转详情页
             $('.main_m').on('click','li',function(){
                 var $sp = $(this).attr('data-id');
-                location.href = 'spxq.html?id=' + $sp;   
+                location.href = 'html/details.html?id=' + $sp;   
             })
         })   
     })

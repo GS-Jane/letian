@@ -1,6 +1,6 @@
 ;
 require(['config'],function(){
-    require(['jquery','gdszoom'],function($,ca){
+    require(['jquery'],function($){
         jQuery(function($){
             //头部引入
             $('#head').load('../html/head.html');

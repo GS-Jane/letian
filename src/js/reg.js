@@ -46,7 +46,7 @@ require(['config'],function(){
             $('.btn').on('click',function(){
                  //判断
                 if($('#username')[0].value ==''&& $('#password')[0].value==''){
-                    alert('不能为空');
+                    alert('账号密码不能为空');
                     return false;
                 }
 
@@ -81,7 +81,7 @@ require(['config'],function(){
                         if(data ==='success'){
                              location.href = 'login.html';
                         }else{
-                            alert('此电话号码以被注册')
+                            alert('此电话号码已被注册')
                         }
                     }
                 })

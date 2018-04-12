@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/head.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shopping.css" />
+    <link rel="stylesheet" type="text/css" href="../css/foot.css" />
+</head>
+<body>
+    <div id="head"></div>
+    <div id="main">
+        <div class="container">
+            <div class="main_zc">
+                 <a href="#" class="zc1"><img src="../svg/房子.svg" /><span>首页></span></a>
+                 <a href="#" class="zc2"><span>购物车</span></a>
+            </div>
+            <h1>购物车</h1>
+            <div class="bz">
+                <ul>
+                    <li><img src="../svg/购物.svg" alt="" /><br />购物车</li>
+                    <li><img src="../svg/icon-出境线路.svg" alt="" /><br />输入护照/出境信息</li>
+                    <li><img src="../svg/付款.svg" alt="" /><br />付款</li>
+                    <li><img src="../svg/注册成功.svg" alt="" /><br />完成订购</li>
+                </ul> 
+            </div>
+            <div class="yhq">
+                <img src="../svg/个人 用户 头像.svg" alt="" />
+                <p>登录后即可享受优惠券、现金积分等多种折扣优惠。</p>
+                <a href="#">登录</a>
+            </div>
+            <div class="tablebox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="checks">
+                                    <input type="checkbox" id="check_all" name="check"/>
+                                    <label for="check_all" class="hide"></label>
+                                </div>
+                            </th>
+                            <th>商品信息</th>
+                            <th>销售价</th>
+                            <th>数量</th>
+                            <th>购买价</th>
+                            <th>选择</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>
+<script type="text/javascript" src="../js/require.js" data-main="../js/shopping"></script>

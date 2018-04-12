@@ -4,13 +4,13 @@
 		var defaults = {
 			// 放大区域的宽高
 			width:500,
-			height:300,
+			height:400,
 
 			// 显示位置
 			position:'right',//left,top,bottom,right
 
 			// 小图与大图的间距
-			gap:15
+			gap:10
 		}
 
 		return this.each(function(){
@@ -41,8 +41,8 @@
 				// 大图位置
 				var left,top;
 				if(opt.position === 'right'){
-					left = $small.offset().left + $small.outerWidth() + opt.gap;
-					top = $small.offset().top;
+					left = $small.offset().left + $small.outerWidth() + opt.gap-160;
+					top = $small.offset().top-290;
 				}else if(opt.position === 'left'){
 					left = $small.offset().left - opt.width - opt.gap;
 					top = $small.offset().top;
@@ -67,7 +67,7 @@
 				$bigImg.appendTo($big);
 
 				// 写入页面
-				$big.appendTo('body');
+				$big.appendTo($('.main_zyl'));
 
 
 				// 创建放大镜
