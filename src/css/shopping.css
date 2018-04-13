@@ -166,6 +166,11 @@
   color: #999999;
 }
 
+#main .tablebox .tboy .col2_xj {
+  text-align: center;
+  color: red;
+}
+
 #main .tablebox .tboy .qty {
   position: relative;
   text-align: center;

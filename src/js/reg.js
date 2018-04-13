@@ -47,6 +47,7 @@ require(['config'],function(){
                  //判断
                 if($('#username')[0].value ==''&& $('#password')[0].value==''){
                     alert('账号密码不能为空');
+                    $('#username').focus();
                     return false;
                 }
 

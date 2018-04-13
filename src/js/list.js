@@ -34,7 +34,7 @@ require(['config'],function(){
                                             <p class="p1">${item.name}</p>
                                             <p class="p2">${item.shorthand}</p>
                                             <p class="p3">${item.englishname}</p>
-                                            <p class="p4"><span>${item.price}</span> ${item.prices}</p>
+                                            <p class="p4"><span>$${item.price}</span> ${item.prices}</p>
                                         </a>
                                     </li>`
                        }).join('');
