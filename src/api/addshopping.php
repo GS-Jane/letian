@@ -14,8 +14,8 @@
     $result = $conn->query($sql);
 
     if($result->num_rows>0){
-
-        $sql = "update shopping set qty='$qty'+qty where c_id='$c_id'";
+        //判断如果数据库存在这个商品，则加1
+        $sql = "update shopping set qty='$qty_txt'+qty where c_id='$c_id'";
 
         // 执行sql语句
         $res = $conn->query($sql);

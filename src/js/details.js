@@ -23,7 +23,7 @@ require(['config'],function(){
             var params = location.search;
             // console.log(params)
             params = params.substring(1).split('=')[1];
-                console.log(params)
+                // console.log(params)
             $.ajax({
                 url:'../api/details.php',
                 type:'get',
@@ -79,6 +79,8 @@ require(['config'],function(){
 
             //点击加入购物车
             $('.jia_ru').on('click',function(){
+                let $time;
+                clearTimeout($time);
                 let $img = $('.main_img').find('img')[0].src;
                 let $ys1 = $('.ys1').text();
                 let $ys2 = $('.ys2').text();
@@ -105,8 +107,16 @@ require(['config'],function(){
                     }
 
                 })
+                $('.tan').fadeIn(1000);
+                    $time = setTimeout(function(){
+                        $('.tan').fadeOut(2000);
+                  },3000)
 
             })
+
+
+         
+
 
         })
     })

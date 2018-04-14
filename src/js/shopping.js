@@ -111,7 +111,9 @@ require(['config'],function(){
               
                 let $qtys = $tr.find('.qty_txt').val()*1-1;
                 total += $price*$qtys;
-                $tr.find('.xj').text(total.toFixed(2))
+
+                $tr.find('.xj').text(total.toFixed(2));
+                    //判断当前的减少的数量少于1，则等于1
                     if(!$qtys<1){
                         
                             $.ajax({
@@ -142,7 +144,7 @@ require(['config'],function(){
                     $('#check_all').prop('checked',$checkbox.length === $checked.length);
                 }
             
-            //点击任意位置勾选当前行
+            //点击任意位置勾选当前行，计算价格
                 // var $zongji = 0;
                 let $xiaoji = 0;
                 let $zongj = 0;
@@ -151,10 +153,13 @@ require(['config'],function(){
                    $(this).toggleClass('selected').find(':checkbox')
                    .prop('checked',$(this).hasClass('selected'));
                     // let $xiaoji = 0;
+                    // 获取当前的tr，
                     let $tr = $(this).closest('tr');
+                    //获取当前的价格
                     let $xiaoji = $tr.find('.xj').text()*1;
                     // console.log($xiaoji)
                     // console.log($zongj)
+                    // 判断input是否勾选
                     if($(this)[0].checked){
                         // console.log($zongj)
                         $zongj += $xiaoji*1;
@@ -190,36 +195,36 @@ require(['config'],function(){
                     checkAll();
             })
                 
-            //全选
+            //全选，计算价格
             $('#check_all').on('click',function(){
                 $xiaoji = 0;
                 $zongj = 0;
                 $('.tboy tr').toggleClass('selected').find(':checkbox').prop('checked',this.checked);
-                    let $tr = $('.tboy1').closest('tr');
+                    // let $tr = $('.tboy1').closest('tr');
                 
                     let xjs = $('.xj'); 
-
+                    //遍历循环得到每个tr的价格
                     for(let i=0;i<xjs.length;i++){
                         
                         let $xj = xjs[i].innerText*1;
                         
                         $xiaoji += $xj;
                     }
-                    
+                    //判断input是否勾选
                     if($(this)[0].checked){
                         $zongj = $xiaoji*1;
                         $('.zong').text('总计:'+$zongj.toFixed(2))
                          
                     }else{
                        
-                        $('.zong').text('总计:0.00' );
+                        $('.zong').text('总计:0' );
                           // location.href="../html/shopping.html";
                     }
                 console.log($zongj)
             })
 
             let del = 'del';
-            //删除
+            //删除商品
             $('.tboy').on('click','.sc',function(){
                 var $tr = $(this).closest('tr');
                 let $id = $tr.attr('data-id');
@@ -241,7 +246,7 @@ require(['config'],function(){
 
             })
 
-            //删除所有
+            //清空购物车
             $('.qing').on('click',function(){console.log(111)
                 $.ajax({
                     url:'../api/delete.php',

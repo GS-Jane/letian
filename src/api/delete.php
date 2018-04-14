@@ -1,4 +1,5 @@
 <?php 
+    //购物车删除接口
     require('./connect.php');
 
     $id = isset($_GET['id']) ? $_GET['id'] : null;
